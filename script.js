@@ -14,12 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Professions for typewriter effect
     const professions = [
-        'Full-Stack Developer',
-        'Frontend Engineer', 
-        'Backend Developer',
-        'UI/UX Enthusiast',
-        'Problem Solver',
-        'Tech Innovator'
+        'Asistente en desarrollo de software',
+        'Frontend Desarrollador', 
+        'Backend Desarrollador',
+        'UI/UX Entusiasta',
+        'Soluciones Creativas',
+        'Solucionador de problemas',
+        'Innovador Tecnológico',
+        'Colaborador de Código Abierto',
+        'Aprendiz de por vida',
+        'Desarrollador React',
+        'Desarrollador Node.js',
+        'Desarrollador Angular',
+        'Bilingue'
     ];
 
     // Typewriter Effect
@@ -34,11 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentProfession = professions[professionIndex];
         
         if (isDeleting) {
-            heroSubtitle.innerHTML = "I'm a " + currentProfession.substring(0, charIndex - 1) + '<span class="cursor">|</span>';
+            heroSubtitle.innerHTML = "Soy " + currentProfession.substring(0, charIndex - 1) + '<span class="cursor">|</span>';
             charIndex--;
             typingSpeed = 75;
         } else {
-            heroSubtitle.innerHTML = "I'm a " + currentProfession.substring(0, charIndex + 1) + '<span class="cursor">|</span>';
+            heroSubtitle.innerHTML = "Soy " + currentProfession.substring(0, charIndex + 1) + '<span class="cursor">|</span>';
             charIndex++;
             typingSpeed = 150;
         }
