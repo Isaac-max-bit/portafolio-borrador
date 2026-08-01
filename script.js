@@ -21,11 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Soluciones Creativas',
         'Solucionador de problemas',
         'Innovador Tecnológico',
-        'Colaborador de Código Abierto',
         'Aprendiz de por vida',
-        'Desarrollador React',
-        'Desarrollador Node.js',
-        'Desarrollador Angular',
         'Bilingue'
     ];
 
