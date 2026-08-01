@@ -406,32 +406,74 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Contact form handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+   // Inicializar EmailJS
+emailjs.init({
+  publicKey: "TU_PUBLIC_KEY",
+});
 
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
+// Seleccionar el formulario
+const contactForm = document.getElementById("contactForm");
 
-            // Simple validation
-            if (!data.name || !data.email || !data.subject || !data.message) {
-                showNotification('Please fill in all fields', 'error');
-                return;
-            }
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-            // Simulate form submission (replace with actual API call)
-            console.log('Form submitted:', data);
+    // Obtener el botón
+    const submitButton = this.querySelector(".submit-btn");
+    const originalButtonText = submitButton.innerHTML;
 
-            // Show success message
-            showNotification('Thank you for your message! I will get back to you soon.', 'success');
+    // Validar los campos
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
 
-            // Reset form
-            this.reset();
-        });
+    if (!data.name || !data.email || !data.subject || !data.message) {
+      showNotification(
+        "Por favor, completa todos los campos.",
+        "error"
+      );
+      return;
     }
 
+    try {
+      // Cambiar el estado del botón
+      submitButton.disabled = true;
+
+      submitButton.innerHTML = `
+        <span>Enviando...</span>
+        <i class="fas fa-spinner fa-spin"></i>
+      `;
+
+      // Enviar el formulario con EmailJS
+      await emailjs.sendForm(
+        "TU_SERVICE_ID",
+        "TU_TEMPLATE_ID",
+        this
+      );
+
+      // Mostrar mensaje de éxito
+      showNotification(
+        "¡Mensaje enviado correctamente! Te responderé lo antes posible.",
+        "success"
+      );
+
+      // Limpiar el formulario
+      this.reset();
+
+    } catch (error) {
+      console.error("Error al enviar el mensaje:", error);
+
+      showNotification(
+        "No fue posible enviar el mensaje. Inténtalo nuevamente.",
+        "error"
+      );
+
+    } finally {
+      // Restaurar el botón
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalButtonText;
+    }
+  });
+}
     // Initialize the application
     init();
 

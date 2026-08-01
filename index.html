@@ -1,639 +1,808 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaac Garcia</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-brand">Isaac García<span class="brand-dot">.</span></div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Acerca de</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li><a href="#service" class="nav-link">Servicios</a></li>
-                <li><a href="#project" class="nav-link">Proyectos</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-            </ul>
-            <div class="nav-cta">
-                <a href="#contact" class="cta-btn">Vamos a hablar</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-brand">
+          Isaac García<span class="brand-dot">.</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Inicio</a></li>
+          <li><a href="#about" class="nav-link">Acerca de</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#service" class="nav-link">Servicios</a></li>
+          <li><a href="#project" class="nav-link">Proyectos</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="cta-btn">Vamos a hablar</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="home" class="section home">
-            <div class="container">
-                <div class="home-content">
-                    <div class="home-text">
-                        <div class="greeting">👋 Qué tal!</div>
-                        <h1 class="hero-title">Soy <span class="accent">Isaac García</span></h1>
-                        <h2 class="hero-subtitle" id="rotating-profession">Asistente en desarrollo de software</h2>
-                        <p class="hero-desc">Soy  Isaac García, Un desarrollador de software apasioando al que le gusta comprender cómo funcionan los sistemas.
-                            <br>desde circuitos lógicos de bajo nivel hasta aplicaciones de alto level.<br>
-                            Con una sólida experiencia en html, css, Javascript y entre otras y tecnologías web modernas,
-mi objetivo es crear software eficiente, confiable y escalable que combine lógica y creatividad.
-                        </p>
-                        
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <span class="stat-number">30+</span>
-                                <span class="stat-label">Projects Completed</span>
-                            </div>
-                        </div>
+      <section id="home" class="section home">
+        <div class="container">
+          <div class="home-content">
+            <div class="home-text">
+              <div class="greeting">👋 Qué tal!</div>
+              <h1 class="hero-title">
+                Soy <span class="accent">Isaac García</span>
+              </h1>
+              <h2 class="hero-subtitle" id="rotating-profession">
+                Asistente en desarrollo de software
+              </h2>
+              <p class="hero-desc">
+                Soy Isaac García, Un desarrollador de software apasioando al que
+                le gusta comprender cómo funcionan los sistemas. <br />desde
+                circuitos lógicos de bajo nivel hasta aplicaciones de alto
+                level.<br />
+                Con una sólida experiencia en html, css, Javascript y entre
+                otras y tecnologías web modernas, mi objetivo es crear software
+                eficiente, confiable y escalable que combine lógica y
+                creatividad.
+              </p>
 
-                        <div class="hero-actions">
-                            <button class="hire-btn primary">
-                                <span>Contrátame</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                            <button class="hire-btn secondary">
-                                <i class="fas fa-download"></i>
-                                <span>Descarga el CV</span>
-                            </button>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="#" aria-label="LinkedIn" class="social-icon linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" aria-label="GitHub" class="social-icon github">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" aria-label="Instagram" class="social-icon instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="home-image">
-                        <div class="image-container">
-                            <img src="images/img.png" alt="Profile photo of Isaac" class="profile-image">
-                            <div class="floating-card card-1">
-                                <i class="fas fa-code"></i>
-                                <span>Clean Code</span>
-                            </div>
-                            <div class="floating-card card-2">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Responsive</span>
-                            </div>
-                            <div class="floating-card card-3">
-                                <i class="fas fa-rocket"></i>
-                                <span>Fast Loading</span>
-                            </div>
-                        </div>
-                    </div>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number">30+</span>
+                  <span class="stat-label">Projects Completed</span>
                 </div>
+              </div>
+
+              <div class="hero-actions">
+                <button class="hire-btn primary">
+                  <span>Contrátame</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="hire-btn secondary">
+                  <i class="fas fa-download"></i>
+                  <span>Descarga el CV</span>
+                </button>
+              </div>
+
+              <div class="social-links">
+                <a href="#" aria-label="WhatsApp" class="social-icon whatsapp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-icon linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" aria-label="GitHub" class="social-icon github">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="social-icon instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
-        </section>
 
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image">
-                        <div class="image-wrapper">
-                            <img src="images/img.png" alt="About Asep" class="about-img">
-                        </div>
-                    </div>
-                    
-                    <div class="about-text">
-                        <h2 class="section-title">Sobre mí</h2>
-                        <div class="about-description">
-                            <p>Soy un desarrollador web apasionado basado en Colombia con una sólida fundamentación en tecnologías frontend y backend. Mi trayectoria en el desarrollo web comenzó hace 3 años, y desde entonces he estado constantemente aprendiendo y adaptándome a las nuevas tecnologías.</p>
-                            
-                            <p>Me especializo en crear sitios web y aplicaciones web responsivas y amigables para el usuario utilizando marcos de trabajo y bibliotecas modernas. Mi enfoque combina experiencia técnica con resolución creativa de problemas para entregar soluciones que no solo se vean bien sino que también performen excepcionalmente.</p>
-                            
-                            <p>Cuando no estoy programando, puedes encontrarme explorando nuevas tecnologías, contribuyendo a proyectos de código abierto, o compartiendo conocimiento con la comunidad de desarrolladores a través de mi blog y redes sociales.</p>
-                        </div>
-
-                        <div class="about-highlights">
-                            <div class="highlight">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <h4>Educación</h4>
-                                    <p>Asistente en desarrollo de software - Cesde</p>
-                                </div>
-                            </div>
-                            <div class="highlight">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4>Ubicación</h4>
-                                    <p>Colombia, Antioquia, Medellín</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="about-actions">
-                            <button class="about-btn">
-                                <span>Descargar CV</span>
-                                <i class="fas fa-download"></i>
-                            </button>
-                        </div>
-                    </div>
+            <div class="home-image">
+              <div class="image-container">
+                <img
+                  src="images/img.png"
+                  alt="Profile photo of Isaac"
+                  class="profile-image"
+                />
+                <div class="floating-card card-1">
+                  <i class="fas fa-code"></i>
+                  <span>Clean Code</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section skills">
-            <div class="container">
-                <h2 class="section-title">Habilidades & Especialidades</h2>
-                <div class="skills-content">
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Frontend Development</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 95%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <span>CSS3</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-js-square"></i>
-                                    <span>JavaScript</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Backend Development</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-node-js"></i>
-                                    <span>Node.js</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-python"></i>
-                                    <span>Python</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 80%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-server"></i>
-                                    <span>Express.js</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 80%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Database Management</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fas fa-database"></i>
-                                    <span>MongoDB</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-database"></i>
-                                    <span>MySQL</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 80%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-database"></i>
-                                    <span>PostgreSQL</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 70%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>DevOps & Tools</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-git-alt"></i>
-                                    <span>Git</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-docker"></i>
-                                    <span>Docker</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 70%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-code"></i>
-                                    <span>VS Code</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 95%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>UI/UX Design</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-figma"></i>
-                                    <span>Figma</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-palette"></i>
-                                    <span>Adobe XD</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <span>Responsive Design</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Mobile Development</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-react"></i>
-                                    <span>React Native</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-android"></i>
-                                    <span>Android</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 70%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-apple"></i>
-                                    <span>iOS</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-fill" style="width: 65%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="floating-card card-2">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>Responsive</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="service" class="section services">
-            <div class="container">
-                <h2 class="section-title">What I Do</h2>
-                <div class="services-content">
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3>Web Development</h3>
-                            <p>I create responsive, modern websites using the latest technologies and best practices. From concept to deployment, I ensure your website looks great and performs perfectly.</p>
-                            <div class="service-features">
-                                <span>Responsive Design</span>
-                                <span>Performance Optimized</span>
-                                <span>SEO Friendly</span>
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3>Mobile Development</h3>
-                            <p>Building cross-platform mobile applications that work seamlessly on both iOS and Android devices using modern frameworks and tools.</p>
-                            <div class="service-features">
-                                <span>Cross-Platform</span>
-                                <span>Native Performance</span>
-                                <span>User-Friendly</span>
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-palette"></i>
-                            </div>
-                            <h3>UI/UX Design</h3>
-                            <p>Designing intuitive and beautiful user interfaces that provide exceptional user experiences. I focus on usability, accessibility, and visual appeal.</p>
-                            <div class="service-features">
-                                <span>User-Centered</span>
-                                <span>Modern Design</span>
-                                <span>Accessibility</span>
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <h3>Performance Optimization</h3>
-                            <p>Optimizing websites and applications for speed, scalability, and reliability. I ensure your digital products perform at their best under any conditions.</p>
-                            <div class="service-features">
-                                <span>Fast Loading</span>
-                                <span>Scalable</span>
-                                <span>Reliable</span>
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <h3>E-commerce Solutions</h3>
-                            <p>Building secure and efficient e-commerce platforms that drive sales and provide excellent shopping experiences for your customers.</p>
-                            <div class="service-features">
-                                <span>Secure Payments</span>
-                                <span>Inventory Management</span>
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <h3>API Development</h3>
-                            <p>Creating robust and scalable APIs that power your applications. I build RESTful and GraphQL APIs with proper documentation and testing.</p>
-                            <div class="service-features">
-                                <span>RESTful APIs</span>
-                                <span>GraphQL</span>
-                                <span>Documentation</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="floating-card card-3">
+                  <i class="fas fa-rocket"></i>
+                  <span>Fast Loading</span>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Projects Section -->
-        <section id="project" class="section projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-content">
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="images/Cleveroad.jpg" alt="Project 1">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>El api de Rick y Morty la serie</h3>
-                                <p>Rick & Morty API es una aplicación web desarrollada para consumir la API pública de Rick and Morty y mostrar información de los personajes de la serie de forma dinámica.</p>
-                                <div class="project-tech">
-                                    <span>React</span>
-                                    <span>JavaScript</span>
-                                    <span>API REST (Rick and Morty API)</span>
-                                    <span>Html5</span>
-                                    <span>Json</span>
-                                    <span>Manipulación del DOM</span>
-                                    <span>Diseño Responsive</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="images/Task manager app.jpg" alt="Project 2">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Task Management App</h3>
-                                <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
-                                <div class="project-tech">
-                                    <span>Vue.js</span>
-                                    <span>Firebase</span>
-                                    <span>Tailwind CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="images/Weather Forecast Dashboard.jpg" alt="Project 3">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Weather Dashboard</h3>
-                                <p>An interactive weather dashboard with location-based forecasts, weather maps, and historical data visualization.</p>
-                                <div class="project-tech">
-                                    <span>JavaScript</span>
-                                    <span>Chart.js</span>
-                                    <span>OpenWeather API</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="images/pf.png" alt="Project 4">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Portfolio Website</h3>
-                                <p>A modern, responsive portfolio website showcasing creative work with smooth animations and interactive elements.</p>
-                                <div class="project-tech">
-                                    <span>HTML5</span>
-                                    <span>CSS3</span>
-                                    <span>JavaScript</span>
-                                    <span>GSAP</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="images/WordPress dashboard design concept.jpg" alt="Project 5">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Blog Platform</h3>
-                                <p>A full-featured blog platform with CMS capabilities, user management, and SEO optimization features.</p>
-                                <div class="project-tech">
-                                    <span>Next.js</span>
-                                    <span>Prisma</span>
-                                    <span>PostgreSQL</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="images/Dashboard - Social Media Analytics.jpg" alt="Project 6">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Social Media Dashboard</h3>
-                                <p>A comprehensive social media management dashboard with analytics, scheduling, and multi-platform integration.</p>
-                                <div class="project-tech">
-                                    <span>React</span>
-                                    <span>D3.js</span>
-                                    <span>Express.js</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image">
+              <div class="image-wrapper">
+                <img src="images/img.png" alt="About Asep" class="about-img" />
+              </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <h2 class="section-title">Ponte en contacto</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Correo Electrónico</h3>
-                                <p>garciaalejoisaac@gmail.com</p>
-                                <a href="mailto:garciaalejoisaac@gmail.com">Envia un correo</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Número de teléfono</h3>
-                                <p>+57 313 790 0176</p>
-                                <a href="tel:+57 313 790 0176">LLamame ahora</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Localización</h3>
-                                <p>Colombia, Antioquía, Medellín</p>
-                                <a href="#" target="_blank">Vista en el mapa</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>WhatsApp</h3>
-                                <p>+57 313 790 0176</p>
-                                <a href="#" target="_blank">Enviar mensaje</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" required>
-                                <label for="name">Ingresa tu nombre</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" required>
-                                <label for="email">Ingresa tu correo electrónico</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="subject" name="subject" required>
-                                <label for="subject">Ingresa el asunto del mensaje</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                                <label for="message">Ingresa tu mensaje</label>
-                            </div>
-                            <button type="submit" class="submit-btn">
-                                <span>Envia un mensaje</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
+            <div class="about-text">
+              <h2 class="section-title">Sobre mí</h2>
+              <div class="about-description">
+                <p>
+                  Soy un desarrollador web apasionado basado en Colombia con una
+                  sólida fundamentación en tecnologías frontend y backend. Mi
+                  trayectoria en el desarrollo web comenzó hace 3 años, y desde
+                  entonces he estado constantemente aprendiendo y adaptándome a
+                  las nuevas tecnologías.
+                </p>
+
+                <p>
+                  Me especializo en crear sitios web y aplicaciones web
+                  responsivas y amigables para el usuario utilizando marcos de
+                  trabajo y bibliotecas modernas. Mi enfoque combina experiencia
+                  técnica con resolución creativa de problemas para entregar
+                  soluciones que no solo se vean bien sino que también performen
+                  excepcionalmente.
+                </p>
+
+                <p>
+                  Cuando no estoy programando, puedes encontrarme explorando
+                  nuevas tecnologías, contribuyendo a proyectos de código
+                  abierto, o compartiendo conocimiento con la comunidad de
+                  desarrolladores a través de mi blog y redes sociales.
+                </p>
+              </div>
+
+              <div class="about-highlights">
+                <div class="highlight">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div>
+                    <h4>Educación</h4>
+                    <p>Asistente en desarrollo de software - Cesde</p>
+                  </div>
                 </div>
+                <div class="highlight">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h4>Ubicación</h4>
+                    <p>Colombia, Antioquia, Medellín</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <button class="about-btn">
+                  <span>Descargar CV</span>
+                  <i class="fas fa-download"></i>
+                </button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="section-title">Habilidades & Especialidades</h2>
+          <div class="skills-content">
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Desarrollador frontend</h3>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 95%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Desarrollador Backend</h3>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <span>Express.js</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Gestión de bases de datos</h3>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>DevOps y herramientas</h3>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <span>VS Code</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 95%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Diseño de UI/UX</h3>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Adobe XD</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Responsive Design</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Desarrollador móvil</h3>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <span>React Native</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-android"></i>
+                    <span>Android</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-apple"></i>
+                    <span>iOS</span>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 65%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="service" class="section services">
+        <div class="container">
+          <h2 class="section-title">A qué me dedico</h2>
+          <div class="services-content">
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3>Desarrollador Web</h3>
+                <p>
+                  Creo sitios web modernos y adaptativos utilizando las últimas
+                  tecnologías y las mejores prácticas. Desde el concepto hasta
+                  la puesta en marcha, me aseguro de que tu sitio web se vea
+                  genial y funcione a la perfección.
+                </p>
+                <div class="service-features">
+                  <span>Diseño adaptativo</span>
+                  <span>Rendimiento optimizado</span
+                  ><span>Optimizado para SEO</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+
+                <h3>Diseño de UI/UX</h3>
+                <p>
+                  Diseño de interfaces de usuario intuitivas y atractivas que
+                  ofrecen experiencias de usuario excepcionales. Me enfoco en la
+                  usabilidad, la accesibilidad y el atractivo visual.
+                </p>
+                <div class="service-features">
+                  <span>Centrado en el usuario</span>
+                  <span>Diseño moderno</span>
+                  <span>Accesibilidad</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Optimización de rendimiento</h3>
+                <p>
+                  Optimizando sitios web y aplicaciones para velocidad,
+                  escalabilidad y confiabilidad. Aseguro que sus productos
+                  digitales se desempeñen al máximo nivel bajo cualquier
+                  condición.
+                </p>
+                <div class="service-features">
+                  <span>Carga rápida</span>
+                  <span>Escalable</span>
+                  <span>Confiable</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Soluciones de comercio electrónico</h3>
+                <p>
+                  Creamos plataformas de comercio electrónico seguras y
+                  eficientes que impulsan las ventas y ofrecen excelentes
+                  experiencias de compra a tus clientes.
+                </p>
+                <div class="service-features">
+                  <span>Payments Seguros</span>
+                  <span> Gestión de Inventario</span>
+                  <span>Análisis de Datos</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Desarrollador API</h3>
+                <p>
+                  Creación de API robustas y escalables que impulsan tus
+                  aplicaciones. Desarrollo API RESTful y GraphQL con la
+                  documentación y las pruebas adecuadas.
+                </p>
+                <div class="service-features">
+                  <span>API RESTful</span>
+                  <span>GraphQL</span>
+                  <span>Documentación</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="project" class="section projects">
+        <div class="container">
+          <h2 class="section-title">Proyectos destacados</h2>
+          <div class="projects-content">
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/Cleveroad.jpg" alt="Project 1" />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>El api de Rick y Morty la serie</h3>
+                  <p>
+                    Rick & Morty API es una aplicación web desarrollada para
+                    consumir la API pública de Rick and Morty y mostrar
+                    información de los personajes de la serie de forma dinámica.
+                  </p>
+                  <div class="project-tech">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>API REST (Rick and Morty API)</span>
+                    <span>Html5</span>
+                    <span>Json</span>
+                    <span>Manipulación del DOM</span>
+                    <span>Diseño Responsive</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/Task manager app.jpg" alt="Project 2" />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Tetris</h3>
+                  <p>
+                    Es un clásico videojuego de lógica y puzles en el que
+                    manipulas figuras geométricas que caen (llamadas
+                    tetrominós).
+                  </p>
+                  <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>CSS3</span>
+                    <span>HTML5</span>
+                    <span>Canvas API</span>
+                    <span>Game Logic</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="images/Weather Forecast Dashboard.jpg"
+                    alt="Project 3"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Aplicación del pronóstico del tiempo</h3>
+                  <p>
+                    Un interface intuitivo para visualizar el pronóstico del
+                    tiempo en tiempo real, con gráficos y datos históricos.
+                  </p>
+                  <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>OpenWeather API</span>
+                    <span>CSS3</span>
+                    <span>API REST</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/pf.png" alt="Project 4" />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Portafolio profesional</h3>
+                  <p>
+                    Un sitio web de portafolio moderno y responsive que destaca
+                    el trabajo creativo con animaciones suaves y elementos
+                    interactivos.
+                  </p>
+                  <div class="project-tech">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>CSS3</span>
+                    <span>HTML5</span>
+                    <span>Typescript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="images/WordPress dashboard design concept.jpg"
+                    alt="Project 5"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Musica electronica</h3>
+                  <p>
+                    Un sitio web para reserrvar boletos para conciertos de
+                    música electrónica.
+                  </p>
+                  <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>Figma</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>DOM JavaScript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="images/Dashboard - Social Media Analytics.jpg"
+                    alt="Project 6"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Cronometro hecho en JavaScript</h3>
+                  <p>
+                    Este es un cronómetro funcional desarrollado completamente
+                    en JavaScript, con una interfaz sencilla y fácil de usar.
+                  </p>
+                  <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>DOM JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">Construyamos algo increíble</h2>
+
+          <div class="contact-content">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+              <!-- Correo -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h3>Hablemos por correo</h3>
+                  <p>¿Tienes una idea, proyecto o propuesta?</p>
+
+                  <a href="mailto:garciaalejoisaac@gmail.com">
+                    garciaalejoisaac@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h3>Llámame</h3>
+                  <p>Disponible para conversar sobre proyectos.</p>
+
+                  <a href="tel:+573137900176"> +57 313 790 0176 </a>
+                </div>
+              </div>
+
+              <!-- Ubicación -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-location-dot"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h3>Ubicación</h3>
+                  <p>Medellín, Antioquia, Colombia</p>
+
+                  <a
+                    href="https://maps.app.goo.gl/zrjSujVt7T53PAMQ7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver ubicación en Google Maps
+                  </a>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h3>Escríbeme por WhatsApp</h3>
+                  <p>Una forma rápida y directa de যোগাযোগ.</p>
+
+                  <a
+                    href="https://wa.me/573137900176?text=Hola%20Isaac%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Iniciar conversación
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulario -->
+            <div class="contact-form">
+              <div class="contact-form-header">
+                <span class="contact-tag">CONTACTO</span>
+
+                <h3>¿Tienes un proyecto en mente?</h3>
+
+                <p>
+                  Cuéntame tu idea. Estaré encantado de conocer nuevos
+                  proyectos, oportunidades y retos tecnológicos.
+                </p>
+              </div>
+
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+
+                  <label for="name"> ¿Cómo te llamas? </label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+
+                  <label for="email"> Tu correo electrónico </label>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" id="subject" name="subject" required />
+
+                  <label for="subject"> ¿De qué quieres hablar? </label>
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+
+                  <label for="message">
+                    Cuéntame los detalles de tu proyecto
+                  </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <span>Enviar propuesta</span>
+
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
