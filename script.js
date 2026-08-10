@@ -406,6 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Contact form handling
+    
    // Inicializar EmailJS
 emailjs.init({
   publicKey: "TU_PUBLIC_KEY",
